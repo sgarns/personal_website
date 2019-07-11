@@ -124,15 +124,15 @@ constructor(props) {
 }
 
 letterSelection = (letter) => {
-  if (letter == "ALL") {
-    var newMuseumList = this.museums;
+  var newMuseumList = if (letter === "ALL") {
+    this.museums;
   } else {
     var allMuseums = this.museums;
-    var newMuseumList = Object.keys(allMuseums).reduce(function(newMuseums, museum) {
-      if (museum[0].toLowerCase() == letter.toLowerCase()) {
+    Object.keys(allMuseums).reduce(function(newMuseums, museum) {
+      if (museum[0].toLowerCase() === letter.toLowerCase()) {
         newMuseums[museum] = allMuseums[museum];
       }
-      return newMuseums;
+    newMuseums;
     }, {});
   }
   return this.setState({
@@ -163,10 +163,11 @@ displayMuseums() {
 
 render() {
   var alphabet_display = this.alphabet.map(letter => {
-    if (letter == this.state.selectedLetter) {
+    if (letter === this.state.selectedLetter) {
       return (
         <div onClick={() => this.letterSelection(letter)}>
-            <b><a href="javascript:void();">{letter}</a></b>
+            // <b><a href="javascript:void();">{letter}</a></b>
+            <b>{letter}</b>
         </div>
       )
     } else if (this.unused_letters.includes(letter)) {
@@ -178,7 +179,8 @@ render() {
     } else {
       return (
         <div onClick={() => this.letterSelection(letter)}>
-            <a href="javascript:void();">{letter}</a>
+            {letter}
+            // <a href="javascript:void();">{letter}</a>
         </div>
       )
     }
