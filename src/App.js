@@ -124,15 +124,16 @@ constructor(props) {
 }
 
 letterSelection = (letter) => {
-  var newMuseumList = if (letter === "ALL") {
-    this.museums;
+  var newMuseumList = []
+  if (letter === "ALL") {
+    newMuseumList = this.museums;
   } else {
     var allMuseums = this.museums;
-    Object.keys(allMuseums).reduce(function(newMuseums, museum) {
+    newMuseumList = Object.keys(allMuseums).reduce(function(newMuseums, museum) {
       if (museum[0].toLowerCase() === letter.toLowerCase()) {
         newMuseums[museum] = allMuseums[museum];
       }
-    newMuseums;
+    return newMuseums;
     }, {});
   }
   return this.setState({
