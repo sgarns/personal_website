@@ -167,7 +167,6 @@ render() {
     if (letter === this.state.selectedLetter) {
       return (
         <div onClick={() => this.letterSelection(letter)}>
-            // <b><a href="javascript:void();">{letter}</a></b>
             <b>{letter}</b>
         </div>
       )
@@ -181,7 +180,6 @@ render() {
       return (
         <div onClick={() => this.letterSelection(letter)}>
             {letter}
-            // <a href="javascript:void();">{letter}</a>
         </div>
       )
     }
