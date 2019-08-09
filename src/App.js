@@ -190,14 +190,7 @@ render() {
       <Navbar bg="light" expand="lg">
         <Navbar.Brand href="#home">Sara Garner</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="#home">About Me</Nav.Link>
-            <Nav.Link href="#link">Blog</Nav.Link>
-            <Nav.Link href="#link">Talks</Nav.Link>
-            <Nav.Link href="#link">Museums</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
+          <Nav className="justify-content-end" style={{ width: "100%"}}><a href="https://www.linkedin.com/in/garnersara/"><FaLinkedin className="icon" size="25" /></a><a href="https://www.twitter.com/sgarns"><FaTwitter className="icon" size="25" /></a></Nav>
       </Navbar>
       <div className="App-body">
         <header>
@@ -217,7 +210,6 @@ render() {
           {this.displayMuseums()}
         </div>
       </div>
-      <div className="icons"><a href="https://www.linkedin.com/in/garnersara/"><FaLinkedin className="icon" size="25" /></a><a href="https://www.twitter.com/sgarns"><FaTwitter className="icon" size="25" /></a></div>
     </div>
   );
 }
