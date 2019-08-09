@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { FaLinkedin, FaRegStar, FaTwitter } from 'react-icons/fa';
+import { Button } from 'react-bootstrap';
+import { FaLinkedin, FaMedium, FaRegStar, FaTwitterSquare } from 'react-icons/fa';
 
 class App extends React.Component {
   alphabet = ['ALL'].concat('ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(''));
@@ -30,89 +31,89 @@ class App extends React.Component {
 }
 
 museums = {
-  "Louvre Museum": "Paris, France",
-  "Metropolitan Museum of Art": "New York, New York",
-  "Museo Nacional del Prado": "Madrid, Spain",
-  "The National Gallery, London": "London, U.K.",
-  "The Uffizi Galleries": "Florence, Italy",
-  "Yad Vashem": "Jerusalem, Israel",
-  "Museum of Fine Arts, Boston": "Boston, Massachusetts",
-  "Museum of Modern Art": "New York, New York",
-  "The Frick Collection": "New York, New York",
-  "The Morgan Library & Museum": "New York, New York",
-  "Kunsthistorisches Museum": "Vienna, Austria",
-  "Vatican Museums": "Rome, Italy",
-  "British Museum": "London, U.K.",
-  "Saatchi Gallery": "London, U.K.",
-  "Museu Picasso": "Barcelona, Spain",
-  "Fundació Joan Miró": "Barcelona, Spain",
-  "La Sagrada Familia": "Barcelona, Spain",
-  "Park Güell": "Barcelona, Spain",
-  "Van Gogh Museum": "Amsterdam, Netherlands",
-  "Rijksmuseum": "Amsterdam, Netherlands",
-  "Anne Frank House": "Amsterdam, Netherlands",
-  "Stedeljik Museum": "Amsterdam, Netherlands",
-  "Museum Het Rembrandthuis": "Amsterdam, Netherlands",
-  "musée du quai Branly": "Paris, France",
-  "Palace of Versailles": "Versailles, France",
-  "Whitney Museum of American Art": "New York, New York",
-  "Asian Art Museum": "San Francisco, California",
-  "San Francisco Museum of Modern Art": "San Francisco, California",
-  "de Young Museum": "San Francisco, California",
-  "The Walt Disney Family Museum": "San Francisco, California",
-  "Legion of Honor": "San Francisco, California",
-  "Palais de Tokyo": "Paris, France",
-  "Los Angeles County Museum of Art": "Los Angeles, California",
-  "The Broad": "Los Angeles, California",
-  "Ca' Pesaro": "Venice, Italy",
-  "Palazzo Fortuny": "Venice, Italy",
-  "Colosseum": "Rome, Italy",
-  "Fondazione Prada": "Rome, Italy",
-  "La biennale di Venezia": "Venice, Italy",
-  "Palazzo Grassi": "Venice, Italy",
-  "Glasstress": "Venice, Italy",
-  "Solomon R. Guggenheim Museum": "New York, New York",
-  "Galleria Borghese": "Rome, Italy",
-  "J. Paul Getty Museum": "Los Angeles, California",
-  "Louisiana Museum of Modern Art": "Humlebaek, Denmark",
-  "ARKEN Museum of Modern Art": "Ishøj, Denmark",
-  "Tate Modern": "London, U.K.",
-  "Tate": "London, U.K.",
-  "Schönbrunn Palace": "Vienna, Austria",
-  "The Little Museum of Dublin": "Dublin, Ireland",
-  "Flannery O’Connor Childhood Home": "Savannah, Georgia",
-  "The Chinati Foundation": "Marfa, Texas",
-  "Judd Foundation": "Marfa, Texas",
-  "American Museum of Natural History": "New York, New York",
-  "Alcatraz Island": "San Francisco, California",
-  "Griffith Observatory": "Los Angeles, California",
-  "Brooklyn Museum": "New York, New York",
-  "New York Historical Society": "New York, New York",
-  "Museum of Arts and Design": "New York, New York",
-  "Rubin Museum of Art": "New York, New York",
-  "MoMA PS1": "New York, New York",
-  "Neue Galerie": "New York, New York",
-  "National Museum of Mathematics": "New York, New York",
-  "Cooper Hewitt, Smithsonian Design Museum": "New York, New York",
-  "New Museum": "New York, New York",
-  "Rubell Family Collection": "Miami, Florida",
-  "Georgia O'Keefe Museum": "Santa Fe, New Mexico",
-  "Totem Heritage Center": "Ketchikan, Alaska",
-  "Salvador Dali Museum": "St. Petersburg, Florida",
-  "Exploratorium": "San Francisco, California",
-  "California Academy of Sciences": "San Francisco, California",
-  "Georgia Aquarium": "Atlanta, Georgia",
-  "Musée d'Art Moderne de la Ville de Paris": "Paris, France",
-  "Deutsches Technikmuseum Berlin": "Berlin, Germany",
-  "Denver Art Museum": "Denver, Colorado",
-  "LBJ Presidential Library": "Austin, Texas",
-  "The Jewish Museum": "New York, New York",
-  "Contemporary Jewish Museum": "San Francisco, California",
-  "Hearst Castle": "San Simeon, California",
-  "The Neon Museum": "Las Vegas, Nevada",
-  "New Orleans Pharmacy Museum": "New Orleans, Louisiana",
-  "Arthur Roger Gallery" : "New Orleans, Louisiana",
-  "The National WWII Museum": "New Orleans, Louisiana"
+ "Alcatraz Island": "San Francisco, California",
+ "American Museum of Natural History": "New York, New York",
+ "Anne Frank House": "Amsterdam, Netherlands",
+ "ARKEN Museum of Modern Art": "Ishøj, Denmark",
+ "Arthur Roger Gallery" : "New Orleans, Louisiana",
+ "Asian Art Museum": "San Francisco, California",
+ "British Museum": "London, U.K.",
+ "Brooklyn Museum": "New York, New York",
+ "Ca' Pesaro": "Venice, Italy",
+ "California Academy of Sciences": "San Francisco, California",
+ "Colosseum": "Rome, Italy",
+ "Contemporary Jewish Museum": "San Francisco, California",
+ "Cooper Hewitt, Smithsonian Design Museum": "New York, New York",
+ "de Young Museum": "San Francisco, California",
+ "Denver Art Museum": "Denver, Colorado",
+ "Deutsches Technikmuseum Berlin": "Berlin, Germany",
+ "Exploratorium": "San Francisco, California",
+ "Flannery O’Connor Childhood Home": "Savannah, Georgia",
+ "Fondazione Prada": "Rome, Italy",
+ "Fundació Joan Miró": "Barcelona, Spain",
+ "Galleria Borghese": "Rome, Italy",
+ "Georgia Aquarium": "Atlanta, Georgia",
+ "Georgia O'Keefe Museum": "Santa Fe, New Mexico",
+ "Glasstress": "Venice, Italy",
+ "Griffith Observatory": "Los Angeles, California",
+ "Hearst Castle": "San Simeon, California",
+ "J. Paul Getty Museum": "Los Angeles, California",
+ "Judd Foundation": "Marfa, Texas",
+ "Kunsthistorisches Museum": "Vienna, Austria",
+ "La biennale di Venezia": "Venice, Italy",
+ "La Sagrada Familia": "Barcelona, Spain",
+ "LBJ Presidential Library": "Austin, Texas",
+ "Legion of Honor": "San Francisco, California",
+ "Los Angeles County Museum of Art": "Los Angeles, California",
+ "Louisiana Museum of Modern Art": "Humlebaek, Denmark",
+ "Metropolitan Museum of Art": "New York, New York",
+ "MoMA PS1": "New York, New York",
+ "Museo Nacional del Prado": "Madrid, Spain",
+ "Museu Picasso": "Barcelona, Spain",
+ "Museum Het Rembrandthuis": "Amsterdam, Netherlands",
+ "Museum of Arts and Design": "New York, New York",
+ "Museum of Fine Arts, Boston": "Boston, Massachusetts",
+ "Museum of Modern Art": "New York, New York",
+ "Musée d'Art Moderne de la Ville de Paris": "Paris, France",
+ "musée du quai Branly": "Paris, France",
+ "National Museum of Mathematics": "New York, New York",
+ "Neue Galerie": "New York, New York",
+ "New Museum": "New York, New York",
+ "New Orleans Pharmacy Museum": "New Orleans, Louisiana",
+ "New York Historical Society": "New York, New York",
+ "Palace of Versailles": "Versailles, France",
+ "Palais de Tokyo": "Paris, France",
+ "Palazzo Fortuny": "Venice, Italy",
+ "Palazzo Grassi": "Venice, Italy",
+ "Park Güell": "Barcelona, Spain",
+ "Rijksmuseum": "Amsterdam, Netherlands",
+ "Rubell Family Collection": "Miami, Florida",
+ "Rubin Museum of Art": "New York, New York",
+ "Saatchi Gallery": "London, U.K.",
+ "Salvador Dali Museum": "St. Petersburg, Florida",
+ "San Francisco Museum of Modern Art": "San Francisco, California",
+ "Schönbrunn Palace": "Vienna, Austria",
+ "Solomon R. Guggenheim Museum": "New York, New York",
+ "Stedeljik Museum": "Amsterdam, Netherlands",
+ "Tate Modern": "London, U.K.",
+ "Tate": "London, U.K.",
+ "The Broad": "Los Angeles, California",
+ "The Chinati Foundation": "Marfa, Texas",
+ "The Frick Collection": "New York, New York",
+ "The Jewish Museum": "New York, New York",
+ "The Little Museum of Dublin": "Dublin, Ireland",
+ "The Morgan Library & Museum": "New York, New York",
+ "The National Gallery, London": "London, U.K.",
+ "The National WWII Museum": "New Orleans, Louisiana",
+ "The Neon Museum": "Las Vegas, Nevada",
+ "The Uffizi Galleries": "Florence, Italy",
+ "The Walt Disney Family Museum": "San Francisco, California",
+ "Totem Heritage Center": "Ketchikan, Alaska",
+ "Van Gogh Museum": "Amsterdam, Netherlands",
+ "Vatican Museums": "Rome, Italy",
+ "Whitney Museum of American Art": "New York, New York",
+ "Yad Vashem": "Jerusalem, Israel",
+ "Louvre Museum": "Paris, France",
 }
 
 constructor(props) {
@@ -146,14 +147,14 @@ displayMuseums() {
   return Object.keys(this.state.museumList).map((museum) => {
     if (museum in this.favorites) {
       return (
-        <div>
+        <div key={museum}>
           <p className="Museum-name"><FaRegStar size="15" /> {museum}</p>
           <p className="Museum-city">{this.state.museumList[museum]}</p>
         </div>
       )
     } else {
       return (
-        <div>
+        <div key={museum}>
           <p className="Museum-name">{museum}</p>
           <p className="Museum-city">{this.state.museumList[museum]}</p>
         </div>
@@ -166,21 +167,21 @@ render() {
   var alphabet_display = this.alphabet.map(letter => {
     if (letter === this.state.selectedLetter) {
       return (
-        <div onClick={() => this.letterSelection(letter)}>
+        <Button variant="light" key={letter} onClick={() => this.letterSelection(letter)}>
             <b>{letter}</b>
-        </div>
+        </Button>
       )
     } else if (this.unused_letters.includes(letter)) {
       return (
-        <div onClick={() => this.letterSelection(letter)}>
-            <p style={{color: 'light gray'}}>{letter}</p>
-        </div>
+        <Button variant="light" key={letter} disabled onClick={() => this.letterSelection(letter)}>
+            {letter}
+        </Button>
       )
     } else {
       return (
-        <div onClick={() => this.letterSelection(letter)}>
+        <Button variant="light" key={letter} onClick={() => this.letterSelection(letter)}>
             {letter}
-        </div>
+        </Button>
       )
     }
   });
@@ -190,14 +191,21 @@ render() {
       <Navbar bg="light" expand="lg">
         <Navbar.Brand href="#home">Sara Garner</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Nav className="justify-content-end" style={{ width: "100%"}}><a href="https://www.linkedin.com/in/garnersara/"><FaLinkedin className="icon" size="25" /></a><a href="https://www.twitter.com/sgarns"><FaTwitter className="icon" size="25" /></a></Nav>
+          <Nav className="justify-content-end" style={{ width: "100%"}}>
+            <a href="https://www.linkedin.com/in/garnersara/"><FaLinkedin className="icon" size="25" /></a>
+            <a href="https://www.twitter.com/sgarns"><FaTwitterSquare className="icon" size="25" /></a>
+            <a href="https://medium.com/@saragarner"><FaMedium className="icon" size="25" /></a>
+          </Nav>
       </Navbar>
       <div className="App-body">
         <header>
           <div className = "About-me">
             <img alt="Headshot" className="headshot" src="https://saragarner-website-images.s3.amazonaws.com/headshot.png" />
             <h3> Hello! Thanks for visiting.</h3>
-            <p> I'm Sara. I'm a Software Engineer, and I enjoy side projects, reading, and planning trips around museums.</p>
+            <p> I'm Sara. I'm a Software Engineer, and I enjoy side projects,
+             crosswords,
+            <a href="https://www.goodreads.com/review/list/5560633?shelf=read"> reading</a>,
+            and <a href="https://www.instagram.com/sgarns/">planning trips around museums.</a></p>
             <p> I'm currently at <a href="https://stripe.com/">Stripe</a>. Previously, I was a Software Engineer at <a href="https://houseparty.com/">Houseparty</a>, and a Data Scientist and Software Engineer at <a href="https://www.facebook.com">Facebook.</a></p>
           </div>
         </header>
