@@ -48,10 +48,16 @@
   color: gray;
 }
 
+.MuseumPage {
+  margin-right: 50px;
+  margin-left: 50px;
+  padding-top: 50px;
+}
+
 .Museums {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
 }
 
@@ -64,4 +70,16 @@
 
 .About-me {
   margin-bottom: 150px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
