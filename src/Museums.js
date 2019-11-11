@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { Button } from 'react-bootstrap';
 import { FaRegStar } from 'react-icons/fa';
+import { useHistory } from "react-router-dom";
 
 class Museums extends React.Component {
 

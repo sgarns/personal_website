@@ -72,6 +72,14 @@
   margin-bottom: 150px;
 }
 
+.centered {
+  position:absolute;
+  width:300px;
+  height:100px;
+  left:50%;
+  margin-left:-50px;
+}
+
 .column {
   float: left;
   width: 25%;
@@ -82,4 +90,9 @@
   content: "";
   display: table;
   clear: both;
+}
+
+.navbar-list a.chosen,
+.navbar-list a:hover {
+  border-bottom: 1px solid #F14B31;
 }
