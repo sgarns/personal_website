@@ -185,20 +185,12 @@ class Museums extends React.Component {
   displayMuseums() {
     return this.state.museumList.map(museumInfo => {
       var museum_name = Object.keys(museumInfo);
-      if (this.isFavorite(museum_name)){
         return (
           <div>
-            <p className="Museum-name"><FaRegStar size="15" /> {museum_name}</p>
+            <p className="Museum-name">{this.isFavorite(museum_name) && <FaRegStar size="15" />} {museum_name}</p>
             <p className="Museum-city">{museumInfo[museum_name]}</p>
           </div>
         )
-      }
-      return (
-        <div>
-          <p className="Museum-name">{museum_name}</p>
-          <p className="Museum-city">{museumInfo[museum_name]}</p>
-        </div>
-      )
     });
   }
 
@@ -207,6 +199,7 @@ class Museums extends React.Component {
     if (country === "favorite") {
       newMuseumList = this.favorites;
     } else if (country === "all") {
+      // Merge all of the countries together
       var currList = [];
       Object.keys(this.museums).map((place) => {
         currList = currList.concat(this.museums[place]);
@@ -228,9 +221,9 @@ class Museums extends React.Component {
           <b>{continent}<br /></b>
           {
             this.locations[continent].map(country =>
-            <Button variant="link" key={country} onClick={() => this.countrySelection(country)}>
-              {country}
-            </Button>
+              <Button variant="link" key={country} onClick={() => this.countrySelection(country)}>
+                {country}
+              </Button>
             )
           }
         <br /></div>
@@ -248,13 +241,11 @@ class Museums extends React.Component {
   }
 
   render() {
-    var location_display = this.getLocationsHeader();
-
     return (
       <div className="MuseumPage">
             <h3> Museums I've visited </h3><br />
             <div>
-              {location_display}
+              {this.getLocationsHeader()}
             </div>
             <hr></hr>
 
