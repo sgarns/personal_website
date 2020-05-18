@@ -5,7 +5,7 @@ import AboutMe from './AboutMe';
 import Museums from './Museums';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { FaLinkedin, FaMedium, FaTwitterSquare } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaMedium, FaTwitterSquare } from 'react-icons/fa';
 
 class AppRouter extends React.Component {
 
@@ -38,6 +38,7 @@ class AppRouter extends React.Component {
         <hr></hr>
         <footer>
           <div className="centered">
+            <a href="https://www.instagram.com/sgarns/"><FaInstagram className="icon" size="25" /></a>
             <a href="https://www.linkedin.com/in/garnersara/"><FaLinkedin className="icon" size="25" /></a>
             <a href="https://www.twitter.com/sgarns"><FaTwitterSquare className="icon" size="25" /></a>
             <a href="https://medium.com/@saragarner"><FaMedium className="icon" size="25" /></a>
