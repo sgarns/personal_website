@@ -23,11 +23,15 @@ class Museums extends React.Component {
     {"Saatchi Gallery": "London, U.K."},
     {"San Francisco Museum of Modern Art": "San Francisco, California"},
     {"La Sagrada Familia": "Barcelona, Spain"},
-    {"The Neon Museum": "Las Vegas, Nevada"}
+    {"The Neon Museum": "Las Vegas, Nevada"},
+    {"Squamish Lil'wat Cultural Centre": "Whistler, British Columbia"},
+    {"Mendocino Coast Botanical Gardens": "Mendocino, California"},
+    {"Studio Be": "New Orleans, Louisiana"}
   ]
 
   locations = {
     "United States": ["Alaska", "California", "Colorado", "Florida", "Georgia", "Louisiana", "Massachusetts", "Nevada", "New Mexico", "New York", "Texas"],
+    "Canada": ["British Columbia"],
     "Europe": ["Austria", "Denmark", "France", "Germany", "Ireland", "Italy", "Netherlands", "Spain", "U.K."],
     "Asia": ["India", "Israel"]
   }
@@ -50,14 +54,21 @@ class Museums extends React.Component {
       {"Los Angeles County Museum of Art": "Los Angeles, California"},
       {"San Francisco Museum of Modern Art": "San Francisco, California"},
       {"The Broad": "Los Angeles, California"},
-      {"The Walt Disney Family Museum": "San Francisco, California"}
+      {"The Walt Disney Family Museum": "San Francisco, California"},
+      {"Sensorio": "Paso Robles, California"},
+      {"Conservatory of Flowers": "San Francisco, California"},
+      {"Mendocino Coast Botanical Gardens": "Mendocino, California"}
     ],
     "Colorado": [
       {"Denver Art Museum": "Denver, Colorado"}
     ],
     "Florida": [
       {"Rubell Family Collection": "Miami, Florida"},
-      {"Salvador Dali Museum": "St. Petersburg, Florida"}
+      {"Salvador Dali Museum": "St. Petersburg, Florida"},
+      {"The Charles Hosmer Morse Museum of American Art": "Winter Park, Florida"},
+      {"Norton Museum of Art": "West Palm Beach, Florida"},
+      {"The Ernest Hemingway Home and Museum": "Key West, Florida"},
+      {"ICE!": "Gaylord Palms, Florida"}
     ],
     "Georgia": [
       {"Flannery O’Connor Childhood Home": "Savannah, Georgia"},
@@ -66,7 +77,8 @@ class Museums extends React.Component {
     "Louisiana": [
       {"Arthur Roger Gallery": "New Orleans, Louisiana"},
       {"New Orleans Pharmacy Museum": "New Orleans, Louisiana"},
-      {"The National WWII Museum": "New Orleans, Louisiana"}
+      {"The National WWII Museum": "New Orleans, Louisiana"},
+      {"Studio Be": "New Orleans, Louisiana"}
     ],
     "Massachusetts": [
       {"Museum of Fine Arts, Boston": "Boston, Massachusetts"},
@@ -100,6 +112,12 @@ class Museums extends React.Component {
       {"Judd Foundation": "Marfa, Texas"},
       {"LBJ Presidential Library": "Austin, Texas"},
       {"The Chinati Foundation": "Marfa, Texas"}
+    ],
+    "Washington": [
+      {"Chihuly Garden and Glass": "Seattle, Washington"}
+    ],
+    "British Columbia": [
+      {"Squamish Lil'wat Cultural Centre": "Whistler, British Columbia"}
     ],
     "Austria": [
       {"Kunsthistorisches Museum": "Vienna, Austria"},
