@@ -15,6 +15,7 @@ class App extends React.Component {
                crosswords,
               <a href="https://www.goodreads.com/review/list/5560633?shelf=read"> reading</a>,
               and <a href="https://www.instagram.com/sgarns/">planning trips around museums.</a></p>
+              <p> I created <a href="https://goghlook.com/">Gogh Look<a> to help you learn about art in an engaging way.</p>
               <p> I'm currently at <a href="https://stripe.com/">Stripe</a>. Previously, I was a Software Engineer at <a href="https://houseparty.com/">Houseparty</a>, and a Data Scientist and Software Engineer at <a href="https://www.facebook.com">Facebook.</a></p>
             </div>
           </header>

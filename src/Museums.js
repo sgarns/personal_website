@@ -30,7 +30,7 @@ class Museums extends React.Component {
   ]
 
   locations = {
-    "United States": ["Alaska", "California", "Colorado", "Florida", "Georgia", "Louisiana", "Massachusetts", "Nevada", "New Mexico", "New York", "Texas"],
+    "United States": ["Alaska", "California", "Colorado", "Florida", "Georgia", "Louisiana", "Massachusetts", "Nevada", "New Mexico", "New York", "Texas", "Washington"],
     "Canada": ["British Columbia"],
     "Europe": ["Austria", "Denmark", "France", "Germany", "Ireland", "Italy", "Netherlands", "Spain", "U.K."],
     "Asia": ["India", "Israel"]
